@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StrategyPattern.Clinet.Models
+﻿namespace StrategyPattern.Clinet.Models
 {
     public class Candidate
     {

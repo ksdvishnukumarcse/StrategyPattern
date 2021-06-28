@@ -1,9 +1,7 @@
 ﻿using StrategyPattern.Clinet.Interface;
 using StrategyPattern.Clinet.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace StrategyPattern.Clinet.Startegies
 {

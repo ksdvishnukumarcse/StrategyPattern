@@ -1,25 +1,25 @@
 ﻿using StrategyPattern.Clinet.Interface;
+using StrategyPattern.Clinet.MockData;
 using StrategyPattern.Clinet.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace StrategyPattern.Client.StrategyConsumer
 {
     public class HumanResource
     {
-        List<Candidate> candiates;
+        List<Candidate> candiates = new List<Candidate>();
         private IStrategy _strategy;
 
         public HumanResource()
         {
-            candiates = new List<Candidate>();
+            candiates.AddRange(CandiatesRepo.GetCandidatesList());
         }
 
-        public void AddCandidate (List<Candidate> candidates)
-        {
-            candiates.AddRange(candidates);
-        }
+        //public void AddCandidate (List<Candidate> candidates)
+        //{
+        //    candiates.AddRange(candidates);
+        //}
 
         public void AddRecruitedStrategy(IStrategy strategy)
         {

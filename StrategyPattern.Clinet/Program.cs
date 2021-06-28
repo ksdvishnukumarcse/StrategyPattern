@@ -1,5 +1,4 @@
 ﻿using StrategyPattern.Client.StrategyConsumer;
-using StrategyPattern.Clinet.MockData;
 using StrategyPattern.Clinet.Startegies;
 using System;
 
@@ -11,8 +10,8 @@ namespace StrategyPattern.Clinet
         {            
             HumanResource hr = new HumanResource();
             
-            //Add Candiates to the Human Resource
-            hr.AddCandidate(CandiatesRepo.GetCandidatesList());
+            ////Add Candiates to the Human Resource
+            //hr.AddCandidate(CandiatesRepo.GetCandidatesList());
 
             //Add the Strategy to get the candidates
             hr.AddRecruitedStrategy(new MinimumThreeSkilsset());

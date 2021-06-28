@@ -1,13 +1,10 @@
 ﻿using StrategyPattern.Clinet.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace StrategyPattern.Clinet.MockData
 {
     public class CandiatesRepo
     {
-
         public static List<Candidate> GetCandidatesList()
         {
             List<Candidate> candidates = new List<Candidate>
